@@ -1,35 +1,17 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
 
   <!-- =========================================================
        CONFIGURAÇÕES BÁSICAS
-       ========================================================= -->
+  ========================================================== -->
 
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="theme-color" content="#8B5CF6">
 
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  >
-
-  <meta
-    name="theme-color"
-    content="#8B5CF6"
-  >
-
-  <title>Vellamonte Academy</title>
-
-
-  <!-- =========================================================
-       SEO
-       ========================================================= -->
+  <meta name="author" content="Vellamonte Academy">
 
   <meta
     name="description"
@@ -41,30 +23,61 @@ html
     content="Vellamonte Academy, Berry Avenue, escola, Roblox, RP, roleplay"
   >
 
-  <meta
-    name="author"
-    content="Vellamonte Academy"
-  >
+  <meta name="robots" content="index, follow">
+
+  <meta name="googlebot" content="index, follow">
+
+  <meta name="language" content="Portuguese">
+
+  <meta name="revisit-after" content="7 days">
+
+  <meta name="application-name" content="Vellamonte Academy">
+
+  <meta name="apple-mobile-web-app-title" content="Vellamonte Academy">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
   <meta
-    name="robots"
-    content="index, follow"
-  >
-
-  <link
-    rel="canonical"
-    href="https://vellamonteacademy.lovie.me"
+    name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent"
   >
 
 
   <!-- =========================================================
-       OPEN GRAPH — DISCORD / FACEBOOK / ETC.
-       ========================================================= -->
+       TÍTULO
+  ========================================================== -->
 
-  <meta
-    property="og:type"
-    content="website"
+  <title>Vellamonte Academy</title>
+
+
+  <!-- =========================================================
+       FAVICON
+       Usa a logo hospedada diretamente no GitHub Raw
+  ========================================================== -->
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://raw.githubusercontent.com/danynoire/vellamonteacademy.lovie.me/fcfc794c05c4b284bb6fe479e15774f5f33b52b9/VellamonteAcademyLogo.png"
   >
+
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="https://raw.githubusercontent.com/danynoire/vellamonteacademy.lovie.me/fcfc794c05c4b284bb6fe479e15774f5f33b52b9/VellamonteAcademyLogo.png"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="https://raw.githubusercontent.com/danynoire/vellamonteacademy.lovie.me/fcfc794c5c4b284bb6fe479e15774f5f33b52b9/VellamonteAcademyLogo.png"
+  >
+
+
+  <!-- =========================================================
+       OPEN GRAPH — DISCORD / FACEBOOK / WHATSAPP / ETC.
+  ========================================================== -->
+
+  <meta property="og:type" content="website">
 
   <meta
     property="og:site_name"
@@ -83,12 +96,18 @@ html
 
   <meta
     property="og:url"
-    content="https://vellamonteacademy.lovie.me"
+    content="https://vellamonteacademy.lovie.me/"
   >
 
   <!-- IMAGEM PRINCIPAL DO EMBED DO DISCORD -->
+
   <meta
     property="og:image"
+    content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0d68ad8c8d0eead3da362166cb05b8ff/id-preview-0228fd20--b6d2204c-cf7d-4a6a-9972-733bbce2ea73.lovable.app-1788567077534.png"
+  >
+
+  <meta
+    property="og:image:url"
     content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0d68ad8c8d0eead3da362166cb05b8ff/id-preview-0228fd20--b6d2204c-cf7d-4a6a-9972-733bbce2ea73.lovable.app-1788567077534.png"
   >
 
@@ -102,10 +121,6 @@ html
     content="image/png"
   >
 
-  <!--
-    Se a imagem for 1200x630, este tamanho é ideal
-    para previews grandes no Discord.
-  -->
   <meta
     property="og:image:width"
     content="1200"
@@ -121,10 +136,15 @@ html
     content="Vellamonte Academy"
   >
 
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
 
   <!-- =========================================================
-       TWITTER CARD
-       ========================================================= -->
+       TWITTER / X CARD
+  ========================================================== -->
 
   <meta
     name="twitter:card"
@@ -153,77 +173,54 @@ html
 
 
   <!-- =========================================================
-       FAVICON
-       ========================================================= -->
+       CANONICAL
+  ========================================================== -->
 
   <link
-    rel="icon"
-    type="image/png"
-    href="VellamonteAcademyLogo.png"
-  >
-
-  <link
-    rel="apple-touch-icon"
-    href="VellamonteAcademyLogo.png"
+    rel="canonical"
+    href="https://vellamonteacademy.lovie.me/"
   >
 
 
   <!-- =========================================================
-       PRELOAD DA IMAGEM DO EMBED
-       ========================================================= -->
+       PRECONNECT / PERFORMANCE
+  ========================================================== -->
 
   <link
-    rel="preload"
-    as="image"
-    href="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0d68ad8c8d0eead3da362166cb05b8ff/id-preview-0228fd20--b6d2204c-cf7d-4a6a-9972-733bbce2ea73.lovable.app-1788567077534.png"
+    rel="preconnect"
+    href="https://raw.githubusercontent.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev"
   >
 
 
   <!-- =========================================================
-       ESTILOS
-       ========================================================= -->
+       ESTILO DA PÁGINA DE REDIRECIONAMENTO
+  ========================================================== -->
 
   <style>
 
-    /*
-      Reset
-    */
-
-    *,
-    *::before,
-    *::after {
+    * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-
-    /*
-      Página
-    */
-
-    html {
+    html,
+    body {
       width: 100%;
-      height: 100%;
-      background: #ffffff;
+      min-height: 100%;
     }
 
     body {
-      width: 100%;
       min-height: 100vh;
-      margin: 0;
 
       display: flex;
       align-items: center;
       justify-content: center;
-
-      background:
-        radial-gradient(
-          circle at top,
-          rgba(139, 92, 246, 0.08),
-          transparent 45%
-        ),
-        #ffffff;
-
-      color: #18181b;
 
       font-family:
         Inter,
@@ -235,221 +232,142 @@ html
         Arial,
         sans-serif;
 
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      background:
+        radial-gradient(
+          circle at top,
+          #f3e8ff 0%,
+          #ffffff 45%,
+          #f8fafc 100%
+        );
+
+      color: #18181b;
+
+      overflow: hidden;
     }
 
-
-    /*
-      Container principal
-    */
-
-    .page {
-      width: 100%;
-      min-height: 100vh;
+    .container {
+      width: min(90%, 520px);
 
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-
-      padding: 24px;
-    }
-
-
-    /*
-      Cartão
-    */
-
-    .card {
-      width: 100%;
-      max-width: 460px;
-
-      padding: 42px 32px;
 
       text-align: center;
 
-      background: rgba(255, 255, 255, 0.96);
+      padding: 40px 30px;
+
+      border-radius: 28px;
+
+      background: rgba(255, 255, 255, 0.82);
 
       border: 1px solid rgba(139, 92, 246, 0.12);
 
-      border-radius: 24px;
-
       box-shadow:
-        0 20px 60px rgba(24, 24, 27, 0.08);
+        0 20px 60px rgba(0, 0, 0, 0.08);
 
-      animation:
-        fadeIn 0.6s ease both;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
     }
 
-
-    /*
-      Logo
-    */
-
     .logo {
-      display: block;
-
-      width: 112px;
-      height: 112px;
-
-      margin: 0 auto 24px;
+      width: 130px;
+      height: 130px;
 
       object-fit: contain;
 
-      border-radius: 22px;
+      margin-bottom: 22px;
 
-      animation:
-        logoIn 0.7s ease both;
+      border-radius: 24px;
+
+      filter:
+        drop-shadow(
+          0 10px 20px rgba(139, 92, 246, 0.18)
+        );
     }
 
-
-    /*
-      Título
-    */
-
-    .title {
-      margin: 0;
-
+    h1 {
       font-size: 30px;
-      line-height: 1.15;
+      font-weight: 800;
 
-      font-weight: 700;
+      letter-spacing: -0.8px;
 
-      letter-spacing: -0.5px;
-
-      color: #18181b;
+      margin-bottom: 10px;
     }
-
-
-    /*
-      Descrição
-    */
 
     .description {
-      max-width: 360px;
-
-      margin: 14px auto 0;
+      max-width: 390px;
 
       font-size: 15px;
+
       line-height: 1.6;
 
       color: #71717a;
+
+      margin-bottom: 25px;
     }
-
-
-    /*
-      Área de carregamento
-    */
 
     .loading {
-      margin-top: 30px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 10px;
-
-      color: #8B5CF6;
-
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-
-    /*
-      Spinner
-    */
-
-    .spinner {
-      width: 18px;
-      height: 18px;
-
-      border: 2px solid rgba(139, 92, 246, 0.2);
-
-      border-top-color: #8B5CF6;
+      width: 38px;
+      height: 38px;
 
       border-radius: 50%;
 
-      animation:
-        spin 0.8s linear infinite;
+      border: 4px solid rgba(139, 92, 246, 0.18);
+
+      border-top-color: #8B5CF6;
+
+      animation: spin 0.8s linear infinite;
+
+      margin-bottom: 18px;
     }
 
-
-    /*
-      Rodapé
-    */
-
-    .footer {
-      margin-top: 28px;
-
-      font-size: 12px;
+    .redirect-text {
+      font-size: 13px;
 
       color: #a1a1aa;
     }
 
+    .button {
+      display: inline-flex;
 
-    /*
-      Link alternativo
-    */
+      align-items: center;
+      justify-content: center;
 
-    .fallback {
-      display: inline-block;
+      margin-top: 20px;
 
-      margin-top: 14px;
+      padding: 12px 22px;
 
-      color: #8B5CF6;
-
-      font-size: 13px;
-      font-weight: 600;
+      border-radius: 12px;
 
       text-decoration: none;
 
+      font-size: 14px;
+      font-weight: 700;
+
+      color: white;
+
+      background: #8B5CF6;
+
+      box-shadow:
+        0 8px 20px rgba(139, 92, 246, 0.25);
+
       transition:
-        opacity 0.2s ease;
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
-    .fallback:hover {
-      opacity: 0.75;
-      text-decoration: underline;
+    .button:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 12px 25px rgba(139, 92, 246, 0.32);
     }
-
-
-    /*
-      Animações
-    */
-
-    @keyframes fadeIn {
-
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-    }
-
-
-    @keyframes logoIn {
-
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-    }
-
 
     @keyframes spin {
+
+      from {
+        transform: rotate(0deg);
+      }
 
       to {
         transform: rotate(360deg);
@@ -457,51 +375,19 @@ html
 
     }
 
+    @media (max-width: 500px) {
 
-    /*
-      Celular
-    */
-
-    @media (max-width: 480px) {
-
-      .page {
-        padding: 16px;
-      }
-
-      .card {
-        padding: 34px 22px;
-
-        border-radius: 20px;
+      .container {
+        padding: 32px 22px;
       }
 
       .logo {
-        width: 96px;
-        height: 96px;
+        width: 105px;
+        height: 105px;
       }
 
-      .title {
+      h1 {
         font-size: 26px;
-      }
-
-      .description {
-        font-size: 14px;
-      }
-
-    }
-
-
-    /*
-      Redução de movimento
-    */
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
       }
 
     }
@@ -510,12 +396,15 @@ html
 
 
   <!-- =========================================================
-       REDIRECIONAMENTO
-       ========================================================= -->
+       REDIRECIONAMENTO PARA O SITE REAL
+       
+       IMPORTANTE:
+       O Discord lê as META TAGS acima antes do redirecionamento.
+  ========================================================== -->
 
   <meta
     http-equiv="refresh"
-    content="2;url=https://forwarding.vellamonteacademy.lovie.me"
+    content="3;url=https://forwarding.vellamonteacademy.lovie.me/"
   >
 
 </head>
@@ -524,108 +413,89 @@ html
 <body>
 
   <!-- =========================================================
-       CONTEÚDO
-       ========================================================= -->
+       CONTEÚDO VISUAL
+  ========================================================== -->
 
-  <main class="page">
+  <main class="container">
 
-    <section class="card">
+    <img
+      class="logo"
+      src="https://raw.githubusercontent.com/danynoire/vellamonteacademy.lovie.me/fcfc794c05c4b284bb6fe479e15774f5f33b52b9/VellamonteAcademyLogo.png"
+      alt="Logo da Vellamonte Academy"
+      width="130"
+      height="130"
+    >
 
-      <!-- Logo da Vellamonte Academy -->
-      <img
-        class="logo"
-        src="VellamonteAcademyLogo.png"
-        alt="Logo da Vellamonte Academy"
-        width="112"
-        height="112"
-      >
+    <h1>
+      Vellamonte Academy
+    </h1>
 
+    <p class="description">
+      Uma experiência escolar completa no Berry Avenue.
+      Você está sendo redirecionado para a Vellamonte Academy.
+    </p>
 
-      <!-- Nome -->
-      <h1 class="title">
-        Vellamonte Academy
-      </h1>
+    <div
+      class="loading"
+      aria-label="Carregando"
+    ></div>
 
+    <p class="redirect-text">
+      Entrando na Vellamonte Academy...
+    </p>
 
-      <!-- Descrição -->
-      <p class="description">
-        Uma experiência escolar completa no Berry Avenue.
-        Prepare-se para conhecer a Vellamonte Academy!
-      </p>
-
-
-      <!-- Loading -->
-      <div
-        class="loading"
-        aria-live="polite"
-      >
-
-        <span
-          class="spinner"
-          aria-hidden="true"
-        ></span>
-
-        <span>
-          Redirecionando...
-        </span>
-
-      </div>
-
-
-      <!-- Link caso o redirecionamento falhe -->
-      <a
-        class="fallback"
-        href="https://forwarding.vellamonteacademy.lovie.me"
-      >
-        Entrar na Vellamonte Academy
-      </a>
-
-
-      <!-- Rodapé -->
-      <div class="footer">
-        © Vellamonte Academy
-      </div>
-
-    </section>
+    <a
+      class="button"
+      href="https://forwarding.vellamonteacademy.lovie.me/"
+    >
+      Entrar agora
+    </a>
 
   </main>
 
 
   <!-- =========================================================
-       JAVASCRIPT
-       ========================================================= -->
+       REDIRECIONAMENTO JAVASCRIPT
+       
+       O meta refresh continua funcionando mesmo se JS estiver
+       desativado. O JS apenas acelera o redirecionamento.
+  ========================================================== -->
 
   <script>
 
-    /*
-      Redirecionamento secundário via JavaScript.
+    window.setTimeout(function () {
 
-      O meta refresh continua existindo como fallback.
-      Este script apenas garante que o visitante seja
-      encaminhado mesmo em navegadores onde o comportamento
-      do meta refresh seja diferente.
-    */
+      window.location.replace(
+        "https://forwarding.vellamonteacademy.lovie.me/"
+      );
 
-    (function () {
-
-      const destination =
-        "https://forwarding.vellamonteacademy.lovie.me";
-
-      /*
-        Pequeno atraso para permitir que a página
-        seja renderizada antes do redirecionamento.
-      */
-
-      setTimeout(function () {
-
-        window.location.replace(destination);
-
-      }, 2000);
-
-    })();
+    }, 3000);
 
   </script>
 
+
+  <!-- =========================================================
+       FALLBACK NOSCRIPT
+  ========================================================== -->
+
+  <noscript>
+
+    <p style="
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    ">
+
+      <a href="https://forwarding.vellamonteacademy.lovie.me/">
+        Clique aqui para entrar na Vellamonte Academy
+      </a>
+
+    </p>
+
+  </noscript>
+
 </body>
 </html>
-
