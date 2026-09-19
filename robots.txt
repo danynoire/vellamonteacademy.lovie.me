@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vellamonteacademy.lovie.me/sitemap.xml
